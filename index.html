@@ -6,54 +6,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Peluquería</title>
         <link rel="stylesheet" href="style.css">
+        <!-- librerías -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:wght@700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+            rel="stylesheet">
     </head>
 
     <body>
+
+        <section class="welcome">
+            <div class="usa-mex">
+                <img src="/images/usa-mex.png" alt="usa-mex">
+            </div>
+            <article class="info">
+                <div class="welcome-1"></div>
+                <div class="welcome-2">
+                    <h3 class="b1">¡Transforma tu look con nosotros! <br><br>
+                        Ven y descubre la experiencia única de nuestra peluquería.
+                        <br> <br>
+                        "Tu estilo, nuestra pasión"
+                    </h3>
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+
         <header class="header">
-
-            <!--** Colocar el interruptor en barar de menu -->
-
-
-
             <div class="header-content container">
                 <div class="header-txt">
-                    <img src="/./images/logo-removebg-preview.png" alt="LOGO" class="logo">
-                    <!-- <h1>PRECISION</h1>
-                    <span>An In-Home Salon</span> -->
-                    <p>La belleza comienza en el instante en que decides ser tú mismo.</p>
-                    <a href="#" class="btn-1">Información</a>
+                    <div class="language">
+                        <!-- <img src="/./images/logo-remove-bg-preview.png" alt="LOGO" class="logo"> -->
+                        <div class="flags-container">
+                            <img src="/images/mexico_flags_flag_17036 (1).png" alt="México" class="ensign">
+                            <span class="split">|</span>
+                            <img src="/images/united_states_flags_flag_17080.png" alt="USA" class="ensign">
+                        </div>
+                    </div>
+                    <h1>La belleza comienza en el instante en que decides ser tú mismo</h1>
+
                 </div>
 
 
                 <div class="header-dir">
                     <div class="dir">
                         <h3>Dirección</h3>
-                        <p>4 Cedar Dr. Landfall MN</p>
+                        <em>4 Cedar Dr, Landfall, MN. 55128</em>
                     </div>
                     <div class="dir">
                         <h3>Teléfono</h3>
-                        <p>998-895-5567</p>
+                        <em>651 706 5300</e>
                     </div>
                     <div class="dir">
-                        <h3>Horarios de atención</h3>
-                        <p>Horario 10am a 6pm</p>
+                        <h3>Horarios de citas</h3>
+                        <em>10am a 6pm</em>
                     </div>
                 </div>
             </div>
         </header>
 
-        <section class="welcome">
-            <div class="welcome-1"></div>
-            <div class="welcome-2">
-                <h2>Bienvenidos a su Estética favorita</h2>
-                <p class="b1"> Lorem ipsum dolor sit amet. </p>
-                <p class="b1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aspernatur dolores sunt
-                    minus, at nesciunt amet! Reiciendis dolore fugiat totam? </p>
-                <a href="#" class="btn-1">Información</a>
-            </div>
-        </section>
 
-        <main class="services container">
+
+        <!-- <main class="services container">
             <div class="services-txt">
                 <h2>Nuestros Servicios</h2>
                 <hr>
@@ -82,13 +101,13 @@
                 </div>
             </div>
             <a href="#" class="btn-1">Información</a>
-        </main>
+        </main> -->
 
 
         <section class="prices">
             <div class="prices-1">
                 <h2>Lista de precios</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, harum!</p>
+
                 <table>
                     <tbody>
                         <tr>
@@ -101,47 +120,56 @@
                         </tr>
                     </tbody>
                 </table>
-                <a href="#" class="btn-1">Información</a>
             </div>
 
             <div class="prices-2">
             </div>
         </section>
 
-        <section class="personal container">
-            <div class="personal-txt">
-                <h2>Nuestros Estilistas</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet.</p>
+        <section class="jobs container">
+            <div class="jobs-group">
+                <div class="jobs-1">
+                    <img src="images/corte01.jpg" alt="Imagen 1">
+                    <h3>Lorem, ipsum.</h3>
+                    <em>Lorem ipsum dolor sit amet.</em>
+                    <a href="#">Saber más</a>
+                </div>
+                <div class="jobs-1">
+                    <img src="images/corte02.jpg" alt="Imagen 2">
+                    <h3>Lorem, ipsum.</h3>
+                    <em>Lorem ipsum dolor sit amet.</em>
+                    <a href="#">Saber más</a>
+                </div>
+                <div class="jobs-1">
+                    <img src="images/" alt="Imagen 3">
+                    <h3>Lorem, ipsum.</h3>
+                    <em>Lorem ipsum dolor sit amet.</em>
+                    <a href="#">Saber más</a>
+                </div>
+            </div>
+            <div class="jobs-txt">
+                <h2>En "PRECISION An-In-Home Salon"</h2>
+                <br>
+                <em> Creemos que los cortes de cabello son más que cambios en la
+                    apariencia; son expresiones de quién eres y de tu estilo
+                    único, por lo que transformaremos tus ideas en verdaderas obras maestras, creando una
+                    experiencia personalizada.
+                    <br> <br> Ven y descubre cómo podemos ayudarte a mostrar tu mejor versión.
+                </em>
             </div>
 
-            <div class="personal-group">
-                <div class="personal-1">
-                    <img src="images/b1.jpg" alt="Imagen 1">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#">Saber más</a>
-                </div>
-                <div class="personal-1">
-                    <img src="images/b2.jpg" alt="Imagen 2">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#">Saber más</a>
-                </div>
-                <div class="personal-1">
-                    <img src="images/b3.jpg" alt="Imagen 3">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#">Saber más</a>
-                </div>
-            </div>
-            <a href="#" class="btn-1">Información</a>
+
+
         </section>
 
         <footer>
             <div class="footer-bg">
-                <h2>Reserva tu cita</h2>
-                <form action="">
+
+
+                <div class="whatsapp-container"> <a href="https://wa.me/16517065300" target="_blank"
+                        class="whatsapp-button"> <img src="/ico/logo_whatsapp_icon_181642.png" alt="WhatsApp"> </a>
+
+                    <!-- <form action="">
                     <div class="campo-1">
                         <input class="campo" type="text" placeholder="Nombre">
                         <input class="campo" type="number" placeholder="Teléfono">
@@ -152,11 +180,12 @@
                     </div>
                     <textarea class="campo" cols="30" rows="10" placeholder="Texto"></textarea>
                     <input type="submit" value="Enviar" Class="btn-1">
-                </form>
-            </div>
-            <div class="footer-txt">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+                </form> -->
+                </div>
+                <div class="footer-txt">
+                    <em>Derechos reservados</em>
+                </div>
+
         </footer>
         <script src="/js/script.js"></script>
 
