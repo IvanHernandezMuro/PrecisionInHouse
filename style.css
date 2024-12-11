@@ -152,7 +152,7 @@ em {
 }
 
 
-.header {
+.welcome {
     /* background-image: url(images/fondo03.png); */
     background-position: center top;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@ em {
     align-items: center;
 }
 
-.header-txt {
+.welcome-txt {
     text-align: center;
     padding: 50px 100px;
     margin: 100px;
@@ -171,17 +171,17 @@ em {
 
 
 /* 
-.header-txt span {
+.welcome-txt span {
     font-size: 25px;
 } */
 
 
 
-.header-dir {
+.welcome-dir {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 140px;
 }
 
 
@@ -270,14 +270,14 @@ em {
     height: 100vh;
 } */
 
-.welcome {
+.header {
     position: absolute;
     display: flex;
     width: 100%;
     height: 100vh;
 }
 
-.welcome .usa-mex {
+.header .usa-mex {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -287,7 +287,7 @@ em {
     height: 100%;
 }
 
-.welcome .usa-mex::before {
+.header .usa-mex::before {
     content: '';
     position: fixed;
     top: 0;
@@ -298,14 +298,14 @@ em {
     pointer-events: none;
 }
 
-.welcome .usa-mex img {
+.header .usa-mex img {
     display: block;
     width: 100%;
     height: 100vh;
 
 }
 
-/* .welcome .usa-mex {
+/* .header .usa-mex {
     position: fixed;
     top: 0;
     left: 0;
@@ -317,7 +317,7 @@ em {
     justify-content: center;
 } */
 
-/* .welcome .usa-mex img::before {
+/* .header .usa-mex img::before {
     content: '';
     position: fixed;
     top: 0;
@@ -335,7 +335,7 @@ em {
     height: 100vh;
 }
 
-.info .welcome-1 {
+.info .header-1 {
     background-image: url(images/logo-remove-bg-preview.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -343,13 +343,13 @@ em {
     width: 50%;
 }
 
-.info .welcome-2 {
+.info .header-2 {
     width: 50%;
     padding: 150px 150px 150px 100px;
     background-color: transparent 50%;
 }
 
-.welcome-2 h3 {
+.header-2 h3 {
     text-align: center;
 }
 
@@ -398,6 +398,10 @@ hr {
 
 .prices {
     display: flex;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
 .prices-1 {
@@ -572,29 +576,29 @@ textarea {
         display: initial;
     }
 
-    .header {
+    .welcome {
         min-height: 0vh;
 
     }
 
-    .header-content {
+    .welcome-content {
         padding: 0px;
     }
 
-    .header-txt {
+    .welcome-txt {
         margin-bottom: 15px;
     }
 
-    .header-txt h1 {
+    .welcome-txt h1 {
         font-size: 40px;
     }
 
-    .header-txt p {
+    .welcome-txt p {
         padding: 0;
         margin: 15px 0;
     }
 
-    .header-dir {
+    .welcome-dir {
         flex-direction: column;
     }
 
@@ -607,15 +611,15 @@ textarea {
         width: 300px;
     }
 
-    .welcome {
+    .header {
         flex-direction: column;
     }
 
-    .welcome-1 {
+    .header-1 {
         display: none;
     }
 
-    .welcome-2 {
+    .header-2 {
         width: 100%;
         padding: 10px 0 10px 0;
         text-align: center;
