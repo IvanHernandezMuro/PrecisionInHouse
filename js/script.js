@@ -4,7 +4,7 @@ function toggleLanguage() {
 		document.documentElement.lang = 'en';
 		document.querySelector('.language-toggle').innerText = 'Switch to Spanish';
 		document.getElementById('content').innerHTML =
-			'<h1>Hello! Welcome to my page.</h1><p>This is an example of a multilingual page.</p>';
+			'<h1>Hello! aside to my page.</h1><p>This is an example of a multilingual page.</p>';
 	} else {
 		document.documentElement.lang = 'es';
 		document.querySelector('.language-toggle').innerText = 'Cambiar a Inglés';
