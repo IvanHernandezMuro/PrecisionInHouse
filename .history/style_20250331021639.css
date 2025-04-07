@@ -111,9 +111,9 @@ body {
 	gap: 5px;
 	padding: 5px;
 	grid-template:
-		'navbar' 50px        /** ok */
-		'header' auto        /** ok */
-		'aside' auto         /** ok */
+		'navbar' 50px
+		'header' auto
+		'aside' auto
 		'main' 200px
 		'sidebar' 200px
 		'services' 200px
