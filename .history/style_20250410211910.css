@@ -102,7 +102,7 @@ span {
 
 
 
-/*? Contenedor Grid */
+///* Contenedor Grid */
 .grid-container > * {
 	box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
 	border-radius: 10px;
@@ -126,7 +126,7 @@ span {
 		'section-03' 150px
 		'footer' 100px;
 }
-/*TODO BARRA DE IDIOMAS */
+/** BARRA DE IDIOMAS */
 
 .navbar {
 	grid-area: navbar;
@@ -164,7 +164,7 @@ span {
 	color: var(--golden-08);
 }
 
-/*TODO COVER CON LOGO */
+/** COVER CON LOGO */
 .header {
 	grid-area: header;
 	background-color: rgba(179, 46, 241, 0.74);
@@ -185,7 +185,7 @@ span {
 	object-fit: fit-content;
 }
 
-/*TODO SECCIÓN ASIDE HORARIOS  */
+/** SECCIÓN ASIDE HORARIOS  */
 .aside {
 	grid-area: aside;
 	background-color: rgba(77, 237, 106, 0.74);
@@ -196,7 +196,7 @@ span {
 }
 
 .aside-content {
-	padding: 3rem;
+	padding: 30px;
 }
 
 .container {
@@ -215,12 +215,17 @@ span {
 	align-items: center;
 }
 .dir {
-	margin-bottom: 1rem;
+	margin-bottom: 10px;
 	text-align: center;
 }
+.dir h3 {
+	font-size: 1.2rem;
+}
+.dir em {
+	font-size: 1rem;
+}
 
-
-/*TODO SECCION SLOGAN */
+/** SECCION ESLOGAN */
 .main {
 	grid-area: main;
 	background-color: red;

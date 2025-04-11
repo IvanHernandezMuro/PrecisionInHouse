@@ -6,60 +6,6 @@
 	text-decoration: none;
 	list-style: none;
 }
-:root {
-	/*Custom properties*/
-	--golden-01: #ffff;
-	--golden-02: #fbf5e4;
-	--golden-03: #f5ebca;
-	--golden-04: #efe2af;
-	--golden-05: #dccd93;
-	--golden-06: #bcae75;
-	--golden-07: #9c9059;
-	--golden-08: #e1dbc8;
-	--grey-01: #9c9c9f;
-	--grey-02: #7d7d80;
-	--grey-03: #444446;
-	--grey-04: #303031;
-	--grey-05: #222223;
-	--grey-06: #151515;
-	--black-01: 3636363;
-	--black-02: #474747;
-	--black-03: #2d2d2d;
-	--black-04: #141414;
-	--black-05: #020202;
-	--white-01: rgb(229, 229, 229);
-	--red-01: #a41f10;
-	--red-02: rgb(220, 53, 69);
-	--red-03: #ff4081;
-}
-
-/** Fuentes */
-.montserrat {
-	font-family: 'Montserrat', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
-}
-
-.bebas-neue-regular {
-	font-family: 'Bebas Neue', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.pt-serif-bold {
-	font-family: 'PT Serif', serif;
-	font-weight: 700;
-	font-style: normal;
-}
-
-.roboto-serif {
-	font-family: 'Roboto Serif', serif;
-	font-optical-sizing: auto;
-	font-weight: 500;
-	font-style: normal;
-	font-variation-settings: 'width' 100, 'GRAD' 0;
-}
 
 html {
 	font-size: 62.5%;
@@ -102,7 +48,7 @@ span {
 
 
 
-/*? Contenedor Grid */
+/** Contenedor Grid */
 .grid-container > * {
 	box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
 	border-radius: 10px;
@@ -115,9 +61,9 @@ span {
 	gap: 5px;
 	padding: 5px;
 	grid-template:
-		'navbar' 50px       
-		'header' auto        
-		'aside' auto        
+		'navbar' 50px        /** ok */
+		'header' auto        /** ok */
+		'aside' auto         /** ok */
 		'main' auto
 		'sidebar' 200px
 		'services' 200px
@@ -126,7 +72,7 @@ span {
 		'section-03' 150px
 		'footer' 100px;
 }
-/*TODO BARRA DE IDIOMAS */
+/** BARRA DE IDIOMAS */
 
 .navbar {
 	grid-area: navbar;
@@ -164,7 +110,7 @@ span {
 	color: var(--golden-08);
 }
 
-/*TODO COVER CON LOGO */
+/** COVER CON LOGO */
 .header {
 	grid-area: header;
 	background-color: rgba(179, 46, 241, 0.74);
@@ -185,7 +131,7 @@ span {
 	object-fit: fit-content;
 }
 
-/*TODO SECCIÓN ASIDE HORARIOS  */
+/** SECCIÓN ASIDE HORARIOS  */
 .aside {
 	grid-area: aside;
 	background-color: rgba(77, 237, 106, 0.74);
@@ -196,7 +142,7 @@ span {
 }
 
 .aside-content {
-	padding: 3rem;
+	padding: 30px;
 }
 
 .container {
@@ -215,12 +161,17 @@ span {
 	align-items: center;
 }
 .dir {
-	margin-bottom: 1rem;
+	margin-bottom: 10px;
 	text-align: center;
 }
+.dir h3 {
+	font-size: 1.2rem;
+}
+.dir em {
+	font-size: 1rem;
+}
 
-
-/*TODO SECCION SLOGAN */
+/** SECCION ESLOGAN */
 .main {
 	grid-area: main;
 	background-color: red;

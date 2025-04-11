@@ -196,7 +196,7 @@ span {
 }
 
 .aside-content {
-	padding: 3rem;
+	padding: 30px;
 }
 
 .container {
@@ -215,10 +215,15 @@ span {
 	align-items: center;
 }
 .dir {
-	margin-bottom: 1rem;
+	margin-bottom: 10px;
 	text-align: center;
 }
-
+.dir h3 {
+	font-size: 1.2rem;
+}
+.dir em {
+	font-size: 1rem;
+}
 
 /*TODO SECCION SLOGAN */
 .main {

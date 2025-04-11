@@ -6,6 +6,46 @@
 	text-decoration: none;
 	list-style: none;
 }
+
+html {
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'roboto-serif';
+	font-size: 1.5rem;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--golden-02);
+}
+h2 {
+	font-family: 'roboto-serif';
+	font-size: 1.4rem;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--golden-02);
+}
+h3 {
+	font-family: 'roboto-serif';
+	font-size: 1.3rem;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--golden-08);
+}
+span {
+	font-family: 'Roboto Serif', serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-variation-settings: 'width' 100, 'GRAD' 0;
+	font-size: 1.3rem;
+	color: var(--red-03);
+}
+
 :root {
 	/*Custom properties*/
 	--golden-01: #ffff;
@@ -61,48 +101,7 @@
 	font-variation-settings: 'width' 100, 'GRAD' 0;
 }
 
-html {
-	font-size: 62.5%;
-}
-
-body{
-	font-size: 16px;
-}
-
-h1 {
-	font-family: 'roboto-serif';
-	font-size: 1.5rem;
-	font-optical-sizing: auto;
-	font-style: normal;
-	color: var(--golden-02);
-}
-h2 {
-	font-family: 'roboto-serif';
-	font-size: 1.4rem;
-	font-optical-sizing: auto;
-	font-style: normal;
-	color: var(--golden-02);
-}
-h3 {
-	font-family: 'roboto-serif';
-	font-size: 1.3rem;
-	font-optical-sizing: auto;
-	font-style: normal;
-	color: var(--golden-08);
-}
-span {
-	font-family: 'Roboto Serif', serif;
-	font-optical-sizing: auto;
-	font-weight: 200;
-	font-style: normal;
-	font-variation-settings: 'width' 100, 'GRAD' 0;
-	font-size: 1.3rem;
-	color: var(--red-03);
-}
-
-
-
-/*? Contenedor Grid */
+/** Contenedor Grid */
 .grid-container > * {
 	box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
 	border-radius: 10px;
@@ -115,9 +114,9 @@ span {
 	gap: 5px;
 	padding: 5px;
 	grid-template:
-		'navbar' 50px       
-		'header' auto        
-		'aside' auto        
+		'navbar' 50px        /** ok */
+		'header' auto        /** ok */
+		'aside' auto         /** ok */
 		'main' auto
 		'sidebar' 200px
 		'services' 200px
@@ -126,7 +125,7 @@ span {
 		'section-03' 150px
 		'footer' 100px;
 }
-/*TODO BARRA DE IDIOMAS */
+/** BARRA DE IDIOMAS */
 
 .navbar {
 	grid-area: navbar;
@@ -164,7 +163,7 @@ span {
 	color: var(--golden-08);
 }
 
-/*TODO COVER CON LOGO */
+/** COVER CON LOGO */
 .header {
 	grid-area: header;
 	background-color: rgba(179, 46, 241, 0.74);
@@ -185,7 +184,7 @@ span {
 	object-fit: fit-content;
 }
 
-/*TODO SECCIÓN ASIDE HORARIOS  */
+/** SECCIÓN ASIDE HORARIOS  */
 .aside {
 	grid-area: aside;
 	background-color: rgba(77, 237, 106, 0.74);
@@ -196,7 +195,7 @@ span {
 }
 
 .aside-content {
-	padding: 3rem;
+	padding: 30px;
 }
 
 .container {
@@ -215,12 +214,17 @@ span {
 	align-items: center;
 }
 .dir {
-	margin-bottom: 1rem;
+	margin-bottom: 10px;
 	text-align: center;
 }
+.dir h3 {
+	font-size: 1.2rem;
+}
+.dir em {
+	font-size: 1rem;
+}
 
-
-/*TODO SECCION SLOGAN */
+/** SECCION ESLOGAN */
 .main {
 	grid-area: main;
 	background-color: red;
