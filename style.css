@@ -119,12 +119,8 @@ span {
 		'header' auto        
 		'aside' auto        
 		'main' auto
-		'sidebar' 200px
-		'services' 200px
-		'section-01' 150px
-		'section-02' 150px
-		'section-03' 150px
-		'footer' 100px;
+		'sidebar' auto
+		'footer' auto;
 }
 /*TODO BARRA DE IDIOMAS */
 
@@ -182,7 +178,7 @@ span {
 .cover-img {
 	width: 100%;
 	height: 100%;
-	object-fit: fit-content;
+	object-fit: cover;
 }
 
 /*TODO SECCIÓN ASIDE HORARIOS  */
@@ -196,7 +192,7 @@ span {
 }
 
 .aside-content {
-	padding: 3rem;
+	padding: 1rem;
 }
 
 .container {
@@ -223,7 +219,7 @@ span {
 /*TODO SECCION SLOGAN */
 .main {
 	grid-area: main;
-	background-color: red;
+	background-color: black;
 
 	position: relative;
 	width: 100%;
@@ -231,38 +227,90 @@ span {
 }
 
 .main-content {
-	padding: 30px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.main-txt h1 {
+.slogan h1, h2 {
 	text-align: center;
+	color: var(--black-05);
 }
 
 .contmain{
-	background-image: url(/images/a1.jpg);
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
+	background-image: radial-gradient(var(--golden-05), transparent);
+	border-radius: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*TODO LISTA DE PRECIOS */
 .sidebar {
 	grid-area: sidebar;
 	background-color: greenyellow;
+
+	display: flex;
+   	position: relative;
+	width: 100%;	
+	height: auto;
 }
 
+ .prices {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+} 
+
+.prices-1 {
+	width: 50%;
+	padding: 1rem;
+	background-color: var(--golden-01);
+	/* border-radius: 200px; */
+}
+
+.prices-1 h2 {
+	color: var(--black-04);
+}
+
+.prices-1 em {
+	color: var(--black-03);
+} 
+
+table {
+	margin: 1rem 0;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+tr {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #afafaf;
+	margin-bottom: 2rem;
+}
+
+th {
+	color: var(--black-03);
+	padding-bottom: 1.5rem;
+}
+
+td {
+	color: #cf2d3a;
+}
+
+ .prices-2 {
+	width: 50%;
+	background-image: url(images/articulo02.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+} 
 
 
 .section-01 {
@@ -288,7 +336,60 @@ span {
 .footer {
 	grid-area: footer;
 	background-color: rgba(237, 123, 0, 0.74);
+
+	position: relative;
+	width: 100%;
+	height: auto;
 }
+.footer-bg {
+	background-image: url(./images/bg-2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.whatsapp-container {
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 1000;
+}
+
+.whatsapp-button img {
+	width: 5rem;
+	height: 5rem;
+}
+
+/* .campo-1 {
+	margin-bottom: 1.5rem;
+}
+
+.campo {
+	margin: 5px;
+	padding: 20px 15px;
+	width: 250px;
+	background-color: #0e0e0e;
+	border: 1px solid #cd2d3a;
+	outline: none;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 14px;
+} */
+
+/* textarea {
+	width: 520px !important;
+	height: 120px !important;
+} */
+
+ .footer-tx {
+	text-align: center;
+	padding: 1rem;
+	background-color: #070707;
+} 
+
+
+
 
 /** Dispositivo Mobil */
 
@@ -529,59 +630,7 @@ span {
 	font-size: 16px;
 } */
 
-/* .prices {
-	display: flex;
-	position: absolute;
-	display: flex;
-	width: 100%;
-	height: 100vh;
-}
 
-.prices-1 {
-	width: 50%;
-	padding: 150px 205px 150px 100px;
-	background-color: var(--golden-01);
-	border-radius: 200px;
-}
-
-.prices-1 h2 {
-	color: var(--black-04);
-}
-
-.prices-1 em {
-	color: var(--black-03);
-} */
-
-/* table {
-	margin: 50px 0;
-	width: 100%;
-	text-align: left;
-	border-collapse: collapse;
-}
-
-tr {
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid #afafaf;
-	margin-bottom: 20px;
-}
-
-th {
-	color: var(--black-03);
-	padding-bottom: 15px;
-}
-
-td {
-	color: #cf2d3a;
-} */
-
-/* .prices-2 {
-	background-image: url(images/articulo02.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 50%;
-} */
 
 /* .jobs {
 	padding: 100px 90px;
@@ -627,53 +676,7 @@ td {
 	color: goldenrod;
 } */
 
-/* .footer-bg {
-	background-image: url(images/fondoBg01.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	padding: 100px 0;
-} */
-/* 
-.whatsapp-container {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 1000;
-} */
-/* 
-.whatsapp-button img {
-	width: 50px;
-	height: 50px;
-} */
 
-/* .campo-1 {
-	margin-bottom: 15px;
-} */
-
-/* .campo {
-	margin: 5px;
-	padding: 20px 15px;
-	width: 250px;
-	background-color: #0e0e0e;
-	border: 1px solid #cd2d3a;
-	outline: none;
-	border-radius: 10px;
-	color: #ffffff;
-	font-size: 14px;
-} */
-
-/* textarea {
-	width: 520px !important;
-	height: 120px !important;
-} */
-
-/* .footer-tx {
-	text-align: center;
-	padding: 10px;
-	background-color: #070707;
-} */
 
 /* @media (max-width: 991px) {
 	.menu {
