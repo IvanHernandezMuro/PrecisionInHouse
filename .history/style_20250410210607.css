@@ -39,10 +39,10 @@ h3 {
 span {
 	font-family: 'Roboto Serif', serif;
 	font-optical-sizing: auto;
-	font-weight: 200;
+	font-weight: 100;
 	font-style: normal;
 	font-variation-settings: 'width' 100, 'GRAD' 0;
-	font-size: 1.3rem;
+	font-size: 15px;
 	color: var(--red-03);
 }
 body {

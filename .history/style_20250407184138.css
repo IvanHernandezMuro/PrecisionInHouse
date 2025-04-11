@@ -6,43 +6,35 @@
 	text-decoration: none;
 	list-style: none;
 }
-
-html {
-	font-size: 62.5%;
-}
-
-body{
-	font-size: 16px;
-}
-
 h1 {
-	font-family: 'roboto-serif';
-	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
 	font-optical-sizing: auto;
+	font-weight: 700;
 	font-style: normal;
 	color: var(--golden-02);
 }
 h2 {
-	font-family: 'roboto-serif';
-	font-size: 1.4rem;
-	font-optical-sizing: auto;
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
 	font-style: normal;
+	font-size: 1.2em;
 	color: var(--golden-02);
 }
 h3 {
-	font-family: 'roboto-serif';
-	font-size: 1.3rem;
-	font-optical-sizing: auto;
+	font-family: 'PT Serif', serif;
+	font-weight: 500;
 	font-style: normal;
+	font-size: 1em;
 	color: var(--golden-08);
 }
-span {
+em {
 	font-family: 'Roboto Serif', serif;
 	font-optical-sizing: auto;
-	font-weight: 200;
+	font-weight: 500;
 	font-style: normal;
 	font-variation-settings: 'width' 100, 'GRAD' 0;
-	font-size: 1.3rem;
+	font-size: 15px;
 	color: var(--red-03);
 }
 body {
@@ -248,7 +240,7 @@ body {
 }
 
 .contmain{
-	background-image: url(/images/a1.jpg);
+	background-image: url(/images/a2.jpg);
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
