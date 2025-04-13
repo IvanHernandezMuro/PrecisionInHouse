@@ -424,7 +424,7 @@ td {
 		background-color: greenyellow;
 		grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
 		padding: 10px;
-		grid-template-rows: 40px 85vh 10rem 40rem 20rem 10rem;
+		grid-template-rows: 40px 85vh 40rem 40rem 20rem 10rem;
 		grid-template-areas:
 			'navbar navbar navbar'
 			'header header header'
@@ -434,15 +434,27 @@ td {
 			'footer footer footer';
 	}
 
+	.aside-content {
+		padding: 1rem;
+	}
 	
+	.container {
+		background-image: url(images/bg-2.png);
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
 	
 	.aside-dir {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-around
+		justify-content: sp
 	}
-	
+	.dir {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
 
 
 

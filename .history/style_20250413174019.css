@@ -434,7 +434,16 @@ td {
 			'footer footer footer';
 	}
 
+	/* .aside-content {
+		padding: 1rem;
+	} */
 	
+	.container {
+		background-image: url(images/bg-2.png);
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
 	
 	.aside-dir {
 		display: flex;
@@ -442,7 +451,10 @@ td {
 		align-items: center;
 		justify-content: space-around
 	}
-	
+	.dir {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
 
 
 
