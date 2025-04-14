@@ -26,7 +26,7 @@
 	--black-02: #474747;
 	--black-03: #2d2d2d;
 	--black-04: #141414;
-	--black-05: #050505;
+	--black-05: #020202;
 	--white-01: rgb(229, 229, 229);
 	--red-01: #a41f10;
 	--red-02: rgb(220, 53, 69);
@@ -67,8 +67,6 @@ html {
 
 body{
 	font-size: 16px;
-	background-color: var(--black-05);
-	
 }
 
 h1 {
@@ -113,7 +111,6 @@ span {
 	font-weight: 500;
 }
 .grid-container {
-	
 	display: grid;
 	gap: 5px;
 	padding: 5px;
@@ -129,17 +126,15 @@ span {
 
 .navbar {
 	grid-area: navbar;
-	background-color: var(--black-05);
-	padding: 0px;
+	background-color: blue;
 
-	position: fixed;
+	position: inherit;
 	display: flex;
 	align-items: end;
 	top: 0;
 	width: 100%;
 	justify-content: flex-end;
 	padding: 0px;
-	z-index: 2000;
 }
 
 .flags-container {
@@ -168,8 +163,7 @@ span {
 /*TODO COVER CON LOGO */
 .header {
 	grid-area: header;
-	background-color: var(--black-05);
-	padding: 0px;
+	background-color: rgba(179, 46, 241, 0.74);
 
 	position: relative;
 	width: 100%;
@@ -190,9 +184,7 @@ span {
 /*TODO SECCIÓN ASIDE HORARIOS  */
 .aside {
 	grid-area: aside;
-	background-color: var(--black-05);
-	padding: 0px;
-	margin: 0px;
+	background-color: rgba(77, 237, 106, 0.74);
 
 	position: relative;
 	width: 100%;
@@ -224,9 +216,7 @@ span {
 /*TODO SECCION SLOGAN */
 .main {
 	grid-area: main;
-	background-color: var(--black-05);
-	padding: 0px;
-	margin: 0px;	
+	background-color: black;
 
 	position: relative;
 	width: 100%;
@@ -257,9 +247,7 @@ span {
 /*TODO LISTA DE PRECIOS */
 .sidebar {
 	grid-area: sidebar;
-	background-color: var(--black-05);
-	padding: 0px;
-	margin: 0px;
+	background-color: greenyellow;
 
 	display: flex;
    	position: relative;
@@ -326,7 +314,7 @@ td {
 
 .footer {
 	grid-area: footer;
-	background-color: var(--black-05);
+	background-color: rgba(237, 123, 0, 0.74);
 
 	position: relative;
 	width: 100%;
@@ -358,10 +346,6 @@ td {
 	background-color: #070707;
 } 
 
-.footer-txt span {
-	color: var(--golden-02);
-	font-size: 1.2rem;
-}
 
 /*TODO SIN SERVICIOS  */
 /* .section-01 {
@@ -386,12 +370,43 @@ td {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /** Media Query tablets 768px*/
 @media (min-width: 768px) {
 	.grid-container {
-	
+		background-color: greenyellow;
 		grid-template-columns: repeat(3, 1fr); 
-		padding: 0px;
+		padding: 10px;
 		grid-template-rows: 50px 85vh 200px 300px 300px 50px;
 		grid-template-areas:
 			'navbar navbar navbar'
@@ -401,40 +416,15 @@ td {
 			'sidebar sidebar sidebar'
 			'footer footer footer';
 	}
-
-	/* SLOGAN 768px  */
-	.main-content {
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	
-	.slogan h1, h2 {
-		text-align: center;
-		color: var(--black-05);
-		font-size: x-large;
-	}
-	
-	.contmain{
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-		background-image: radial-gradient(var(--golden-05), transparent);
-		border-radius: 1rem;
-	}
-
-
 }
 
 /** Media Query Desktop 992px */
 @media (min-width: 992px) {
 	.grid-container {
-	
+		background-color: greenyellow;
 		grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-		padding: 0;
-		grid-template-rows: 40px 85vh 20rem 20rem 35rem 10rem;
+		padding: 10px;
+		grid-template-rows: 40px 85vh 10rem 40rem 20rem 10rem;
 		grid-template-areas:
 			'navbar navbar navbar'
 			'header header header'
@@ -444,40 +434,26 @@ td {
 			'footer footer footer';
 	}
 
-	/* HORARIOS 92px*/
-	.aside-content {
-		padding: 4rem;
-	}
 	
-	.container {
-		background-image: url(images/bg-2.png);
-		max-width: 100%;
-		height: 100%;
-		margin: 0 auto;
-	}
 	
 	.aside-dir {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-around;
-		
+		justify-content: space-around
 	}
-	.dir {
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-
-    .dir h3{
-			font-size: x-large;
-	}
-	.dir span{
-    		font-size: large;
-	}
-
-	/* SLOGAN 992px */
+	
+	/* .main {
+		grid-area: main;
+		background-color: black;
+	
+		position: relative;
+		width: 100%;
+		height: auto;
+	} */
+	
 	.main-content {
-		padding:0;
+		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -498,218 +474,55 @@ td {
 		border-radius: 1rem;
 	}
 
-	/* LISTA DE PRECIOS  992px*/
-	.sidebar {
-		grid-area: sidebar;
-	
-	
-		display: flex;
-		   position: relative;
-		width: 100%;	
-		height: auto;
-	}
-	
-	 .prices {
-		display: flex;
-		position: relative;
-		width: 100%;
-		height: auto;
-	} 
-	
-	.prices-1 {
-		width: 50%;
-		padding: 6rem;
-		background-color: var(--golden-01);
-		/* border-radius: 200px; */
-	}
-	
-	.prices-1 h2 {
-		color: var(--black-04);
-	}
-	
-	.prices-1 em {
-		color: var(--black-03);
-	} 
-	
-	table {
-		margin: 1rem 0;
-		width: 100%;
-		text-align: left;
-		border-collapse: collapse;
-	}
-	
-	tr {
-		display: flex;
-		justify-content: space-between;
-		border-bottom: 1px solid #afafaf;
-		margin-bottom: 2rem;
-	}
-	
-	th {
-		color: var(--black-03);
-		padding-bottom: 1.5rem;
-	}
-	
-	td {
-		color: #cf2d3a;
-	}
-	
-	 .prices-2 {
-		width: 50%;
-		background-image: url(images/articulo02.jpg);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		
-	} 
-
-	/* FOOTER */
-	.footer-txt span {
-		color: var(--golden-02);
-		font-size: large;
-}
-}
 
 
 
-/** Media Query Monitores 1200px */
-@media (min-width: 1200px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Media Query Monitores */
+/* @media (min-width: 1200px) {
 	.grid-container {
-	
+		background-color: greenyellow;
 		grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-		padding: 0;
+		padding: 10px;
 
-		grid-template-rows: 40px 85vh 40rem 40rem 50rem 20rem;
+		grid-template-rows: 40px 85vh 400px 400px 300px 100px;
 		grid-template-areas:
 			'navbar navbar navbar'
 			'header header header'
 			'aside aside aside'
-			'main main main'
-			'sidebar sidebar sidebar'
+			'sidebar sidebar main'
+			'section-01 section-02 section-03'
 			'footer footer footer';
 	}
-	/* HORARIOS 1200px*/
-	.aside-content {
-		padding: 10rem;
-	}
-	
-	.container {
-		background-image: url(images/bg-2.png);
-		max-width: 100%;
-		height: 100%;
-		margin: 0 auto;
-	}
-	
-	.aside-dir {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		
-	}
-	.dir {
-		margin-bottom: 1rem;
-		text-align: center;
-	}
+} */
 
-    .dir h3{
-			font-size: x-large;
-	}
-	.dir span{
-    		font-size: large;
-	}
-
-	/* SLOGAN 1200px */
-	.main-content {
-		padding: 10rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	
-	.slogan h1, h2 {
-		text-align: center;
-		color: var(--black-05);
-		font-size: xx-large;
-	}
-	
-	.contmain{
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-		background-image: radial-gradient(var(--golden-05), transparent);
-		border-radius: 1rem;
-	}
-
-	/* LISTA DE PRECIOS  1200px*/
-	.sidebar {
-		grid-area: sidebar;
-	
-	
-		display: flex;
-		   position: relative;
-		width: 100%;	
-		height: auto;
-	}
-	
-	 .prices {
-		display: flex;
-		position: relative;
-		width: 100%;
-		height: auto;
-	} 
-	
-	.prices-1 {
-		width: 50%;
-		padding: 15rem;
-		background-color: var(--golden-01);
-		border-radius: 200px;
-	}
-	
-	.prices-1 h2 {
-		color: var(--black-04);
-	}
-	
-	.prices-1 em {
-		color: var(--black-03);
-	} 
-	
-	table {
-		margin: 1rem 0;
-		width: 100%;
-		text-align: left;
-		border-collapse: collapse;
-	}
-	
-	tr {
-		display: flex;
-		justify-content: space-between;
-		border-bottom: 1px solid #afafaf;
-		margin-bottom: 2rem;
-	}
-	
-	th {
-		color: var(--black-03);
-		padding-bottom: 1.5rem;
-	}
-	
-	td {
-		color: #cf2d3a;
-	}
-	
-	 .prices-2 {
-		width: 50%;
-		background-image: url(images/articulo02.jpg);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		
-	} 
-
-	/* FOOTER */
-	.footer-txt span {
-		color: var(--golden-02);
-		font-size: large;
-}
-}

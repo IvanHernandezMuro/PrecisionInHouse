@@ -67,7 +67,6 @@ html {
 
 body{
 	font-size: 16px;
-	background-color: var(--black-05);
 	
 }
 
@@ -130,16 +129,14 @@ span {
 .navbar {
 	grid-area: navbar;
 	background-color: var(--black-05);
-	padding: 0px;
 
-	position: fixed;
+	position: inherit;
 	display: flex;
 	align-items: end;
 	top: 0;
 	width: 100%;
 	justify-content: flex-end;
 	padding: 0px;
-	z-index: 2000;
 }
 
 .flags-container {
@@ -169,7 +166,6 @@ span {
 .header {
 	grid-area: header;
 	background-color: var(--black-05);
-	padding: 0px;
 
 	position: relative;
 	width: 100%;
@@ -191,8 +187,6 @@ span {
 .aside {
 	grid-area: aside;
 	background-color: var(--black-05);
-	padding: 0px;
-	margin: 0px;
 
 	position: relative;
 	width: 100%;
@@ -225,8 +219,6 @@ span {
 .main {
 	grid-area: main;
 	background-color: var(--black-05);
-	padding: 0px;
-	margin: 0px;	
 
 	position: relative;
 	width: 100%;
@@ -258,8 +250,6 @@ span {
 .sidebar {
 	grid-area: sidebar;
 	background-color: var(--black-05);
-	padding: 0px;
-	margin: 0px;
 
 	display: flex;
    	position: relative;
@@ -326,7 +316,7 @@ td {
 
 .footer {
 	grid-area: footer;
-	background-color: var(--black-05);
+	background-color: --var(--black-05);
 
 	position: relative;
 	width: 100%;
@@ -391,7 +381,7 @@ td {
 	.grid-container {
 	
 		grid-template-columns: repeat(3, 1fr); 
-		padding: 0px;
+		padding: 10px;
 		grid-template-rows: 50px 85vh 200px 300px 300px 50px;
 		grid-template-areas:
 			'navbar navbar navbar'
@@ -404,7 +394,7 @@ td {
 
 	/* SLOGAN 768px  */
 	.main-content {
-		padding: 0;
+		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -433,7 +423,7 @@ td {
 	.grid-container {
 	
 		grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-		padding: 0;
+		padding: 10px;
 		grid-template-rows: 40px 85vh 20rem 20rem 35rem 10rem;
 		grid-template-areas:
 			'navbar navbar navbar'
@@ -477,7 +467,7 @@ td {
 
 	/* SLOGAN 992px */
 	.main-content {
-		padding:0;
+		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -577,7 +567,7 @@ td {
 	.grid-container {
 	
 		grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-		padding: 0;
+		padding: 10px;
 
 		grid-template-rows: 40px 85vh 40rem 40rem 50rem 20rem;
 		grid-template-areas:
