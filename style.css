@@ -180,11 +180,13 @@ span {
 	width: auto;
 	height: 100%;
 	object-fit: cover;
+	
 }
 .cover-img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+		
 }
 
 /*TODO SECCIÓN ASIDE HORARIOS  */
@@ -208,6 +210,7 @@ span {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
+	background-attachment: fixed;
 }
 
 .aside-dir {
@@ -224,7 +227,7 @@ span {
 /*TODO SECCION SLOGAN */
 .main {
 	grid-area: main;
-	background-color: var(--black-05);
+	/* background-color: var(--black-05); */
 	padding: 0px;
 	margin: 0px;	
 
@@ -250,7 +253,7 @@ span {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
-	background-image: radial-gradient(var(--golden-05), transparent);
+	/* background-image: radial-gradient(var(--golden-05), transparent); */
 	border-radius: 1rem;
 }
 
